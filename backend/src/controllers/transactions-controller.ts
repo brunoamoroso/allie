@@ -163,7 +163,7 @@ export const getAllTransactionsByMonth = async (
 ) => {
   const { selectedDate, coinSelected } = req.params;
   const date = new Date(selectedDate);
-  const createStartDate = toYMD(new Date(date.getFullYear(), date.getMonth(), 0));
+  const createStartDate = toYMD(new Date(date.getFullYear(), date.getMonth(), 1));
   const createEndDate = toYMD(new Date(
     date.getFullYear(),
     date.getMonth() + 1,
