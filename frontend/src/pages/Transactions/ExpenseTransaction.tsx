@@ -196,6 +196,7 @@ export default function ExpenseTransaction({
                       similarDescriptionData.map((item) => (
                         <CommandItem
                           key={item.id}
+                          className="h-11"
                           onSelect={() => {
                             handleSelectedSuggestion(item.id);
                             setIsAutoCompleteOpen(false);

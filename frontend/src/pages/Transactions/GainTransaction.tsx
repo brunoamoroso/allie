@@ -134,6 +134,7 @@ export default function GainTransaction({
                       similarDescriptionData.map((item) => (
                         <CommandItem
                           key={item.id}
+                          className="h-11"
                           onSelect={() => {
                             handleSelectedSuggestion(item.id);
                             setIsAutoCompleteOpen(false);
